@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url();
+}
+
+.profile-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 370px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  padding: 25px;
+}
+.image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #1da1f2;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+.image .profile-img {
+  background-image: url(profile-pic.jpg);
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  background-color: #111;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  cursor: pointer;
+}
+
+.image .profile-img:hover {
+  transition: all 0.7s ease;
+  transform: scale(1.01);
+}
+
+.profile-card .text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-data .name {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.text-data .job {
+  font-size: 13px;
+  font-weight: 400;
+  color: #322f2f;
+}
+
+.profile-card .media-buttons {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.media-buttons .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 34px;
+  width: 34px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #4070f4;
+  margin: 0 8px;
+}
+
+.media-buttons .link:first-child {
+  background-color: #4367b2;
+}
+
+.media-buttons .link:nth-child(2) {
+  background-color: #1da1f2;
+}
+
+.media-buttons .link:nth-child(3) {
+  background-color: #e1306c;
+}
+
+.media-buttons .link:nth-child(4) {
+  background-color: #000;
+}
+.profile-card .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px 10px;
+}
+
+.profile-card .buttons button {
+  padding: 5px 50px;
+  color: #fff;
+  background-color: #4070f4;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.profile-card .buttons button:hover {
+  background-color: #9cc6e0;
+  transform: scale(1.001);
+  transition: all 0.3s ease;
+}
+
+.profile-card .media-buttons .link:hover {
+  background-color: rgba(10, 10, 0, 0.5);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.profile-card::before {
+  content: "";
+  position: absolute;
+  height: 36%;
+  width: 100%;
+  background-color: #1da1f2;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+}
